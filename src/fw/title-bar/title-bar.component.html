@@ -1,0 +1,27 @@
+
+<div *screenBelowLarge  class="title-bar-small">
+    <span class="glyphicon glyphicon-menu-hamburger"
+      (click)="menuService.toggleLeftSideMenu()">
+    </span>
+    <div class="small-image-holder">
+        <img src="assets/earth.png" class="small-image">
+    </div>
+    <span class="glyphicon glyphicon-option-vertical"></span>
+</div>
+
+<div *screenLarge class="title-bar">
+  <img src="assets/earth.png"
+    alt="Green Nations Logo">
+  <h3 class="green">Green Nations</h3>
+  <div class="menu-area">
+    <fw-top-bar>
+    </fw-top-bar>
+    <fw-menu *ngIf="!menuService.isVertical">
+    </fw-menu>
+  </div>
+</div>
+
+
+
+
+

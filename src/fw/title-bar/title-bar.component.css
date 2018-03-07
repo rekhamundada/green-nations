@@ -1,0 +1,39 @@
+:host {
+  display: flex;
+}
+.title-bar {
+  flex-grow: 1;
+  display: flex;
+  min-height: 80px;
+}
+
+.menu-area {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding-right: 20px;
+
+}
+.green {
+  display: flex;
+  color: green;
+  padding-top: 10px;
+}
+.title-bar-small {
+  flex-grow: 1;
+  display: flex;
+  min-height: 56px;
+}
+.small-image-holder {
+  flex-grow: 1;
+}
+.small-image {
+  height: 50px;
+}
+span {
+  margin-left: 10px;
+  margin-right: 20px;
+  font-size: 25px;
+  line-height: 50px;
+}
+
