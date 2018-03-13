@@ -6,13 +6,13 @@
     [src]="icon.imageFile"
     [alt]="icon.alt">
 </a>
-<div *ngIf="frameworkConfigService.showLanguageSelector">
-  <img class="flag-image" src="" alt="">
+<!-- <div *ngIf="frameworkConfigService.showLanguageSelector">
+  <img class="flag-image" src="" alt="Flag">
   <span>BAJAN</span>
   <span class="glyphicon glyphiconchevron-down-"></span>
-</div>
+</div> -->
 
 <div  *ngIf="frameworkConfigService.showUserControls">
-  <span>SIGN IN</span>
-
+    <span>Rekha Mundada</span>
+    <span class="sign-out" (click)="signOut()">SIGN OUT</span>
 </div>
