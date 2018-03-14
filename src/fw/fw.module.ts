@@ -22,6 +22,7 @@ import { RouterModule } from '@angular/router';
 import { PopupMenuComponent } from './popup-menu/popup-menu.component';
 import { DynamicFormComponent } from './dynamic-forms/dynamic-form/dynamic-form.component';
 import { DynamicFieldComponent } from './dynamic-forms/dynamic-field/dynamic-field.component';
+import { PanelComponent } from './panels/panel/panel.component';
 
 @NgModule({
   imports: [
@@ -42,12 +43,15 @@ import { DynamicFieldComponent } from './dynamic-forms/dynamic-field/dynamic-fie
     MenuItemComponent,
     PopupMenuComponent,
     DynamicFormComponent,
-    DynamicFieldComponent
-
+    DynamicFieldComponent,
+    PanelComponent
   ],
   exports: [
     FrameworkBodyComponent,
     DynamicFormComponent,
+    PanelComponent,
+    ScreenBelowLargeDirective,
+    ScreenLargeDirective,
   ],
   providers: [
     FrameworkConfigService,

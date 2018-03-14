@@ -20,8 +20,8 @@ export const routes: Routes = [
   {path: 'authenticated', component: AuthUserComponent,
     canActivate: [ AuthGuardService],
   children: [
-   {path: '',  canActivateChild: [ AuthGuardService],
-    children: [
+      {path: '',  canActivateChild: [ AuthGuardService],
+        children: [
       {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
       { path: 'dashboard', component: DashboardComponent },
       {path: 'country-list/:count', component: CountryListComponent},

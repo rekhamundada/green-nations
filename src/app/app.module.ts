@@ -22,6 +22,8 @@ import { UserService } from './services/user.service';
 import { UserApi } from './users/user.api';
 import { AuthGuardService } from './services/auth-guard.service';
 import { AppDataService } from './services/app-data.service';
+import { CountryPanelComponent } from './panels/country-panel/country-panel.component';
+import { ImagePanelComponent } from './panels/image-panel/image-panel.component';
 
 
 @NgModule({
@@ -35,6 +37,8 @@ import { AppDataService } from './services/app-data.service';
     AuthUserComponent,
     SignInComponent,
     RegisterUserComponent,
+    CountryPanelComponent,
+    ImagePanelComponent,
 
   ],
   imports: [
